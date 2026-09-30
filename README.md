@@ -12,6 +12,14 @@ Controller → Service → Repository로 역할을 나누고, JPA와 H2를 사�
 
 [전체 학습 기록과 Postman 화면](#original-readme-preserved) · [API Controller](src/main/java/com/unknown/crud/controller/WorkoutApiController.java)
 
+## 실제 API 동작 GIF
+
+![컴파일한 Spring 운동 기록 API의 생성 조회 수정 삭제 흐름](docs/images/spring-workout-api-demo.gif)
+
+Java 17과 Gradle Wrapper로 JAR를 빌드하고 실행한 뒤, 실제 HTTP 요청·응답을 16:9 GIF로 정리했습니다. 초기 조회 → 생성(201) → 목록 조회 → 수정 → 상세 조회 → 삭제(204) → 빈 목록 확인 흐름입니다.
+
+[빌드 명령과 실행 환경](docs/demo-capture.md)
+
 ## 요청·응답 미리보기
 
 <img src="images/image%202.png" alt="운동 기록 API의 기존 Postman 실행 화면" width="560">
